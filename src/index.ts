@@ -1,1 +1,1 @@
-import IParty from './interfaces/party';
+export * from './interfaces/party';

@@ -1,6 +1,8 @@
 import IBase from './base';
 
-export default interface IParty extends IBase {
+interface IParty extends IBase {
   key: string;
   name: string;
 }
+
+export { IParty };
