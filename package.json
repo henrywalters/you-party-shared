@@ -1,15 +1,17 @@
 {
   "name": "you-party-shared",
-  "version": "1.0.2",
+  "version": "1.0.12",
   "description": "Shared library for you-party",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepare" : "npm run build",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +32,8 @@
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "class-validator": "^0.9.1"
   }
 }
